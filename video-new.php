@@ -60,7 +60,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     }else {          
         $channel_url = $_POST['channel_url'];                
     }
-    
+
+    if(!empty($_POST['memo'])){       
+        $memo = $_POST['memo'];
+    }
 
     if( empty($_POST['privacy'])){
         $privacy_Err = 'You MUST agree to create a new video'; 
