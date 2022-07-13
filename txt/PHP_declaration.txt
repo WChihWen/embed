@@ -1,0 +1,74 @@
+$name = 'Chih Wen';
+$weather = 'Today is a suuny day';
+$body_tmp = 98.6;
+
+echo'My name is $name';
+
+// If using single quotes around a variable, the value of the variable will not display.
+// If using double quates, the variable value will display!
+
+echo 'My name is ' .$name.' ';
+echo $weather;
+echo $body_tmp;
+echo 'The normal body temperature is'.$body_tmp.' and all is well!';
+
+$x = 20;
+$y = 5;
+echo $x;
+
+$z = $x + $y;
+echo $z;
+
+$z = $x * $y;
+echo $z;
+
+//our first function - number_format()
+$x = 137;
+$x /= 4;
+$friendly_x = number_format($x,1);
+echo $friendly_x;
+
+// our second preset function- the date function
+echo date('Y');
+echo date('l');
+
+//arrays - cannot echo an array!
+$fruit[] = 'orange';
+$fruit[] = 'banana';
+$fruit[] = 'grapes';
+
+echo $fruit[2]; // we can echo an indexed option
+$fruit = array(
+    'orange',
+    'banana',
+    'grapes'
+);
+
+$fruit = [
+    'orange',
+    'banana',
+    'grapes'
+];
+// cannot echo an array!
+echo $fruit;
+print_r($fruit);
+var_dump($fruit);
+
+// another array in the world of websites
+$nav[] = 'Home';
+$nav[] = 'About';
+$nav[] = 'Daily';
+echo $nav[0];
+
+// associative array
+$nav['index.php'] = 'Home';
+$nav['about.php'] = 'About';
+$nav['daily.php'] = 'Daily';
+
+$nav = array(
+    'index.php' => 'Home',
+    'about.php' => 'About',
+    'daily.php' => 'Daily'
+);
+
+

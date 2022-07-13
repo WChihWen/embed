@@ -1,0 +1,52 @@
+// foreach
+   
+    $show = array(
+        'Name' => 'Handmaid\'s Tale',
+        'Actor' => 'Elizabeth Moss',
+        'Genre' => 'Drama',
+        'Author' => 'Margaret Atwood',
+        'Year' => '1987'
+    );
+
+    $show['Name']='Handmaid\'s Tale';
+    $show['Actor']='Elizabeth Moss';
+    $show['Genre']='Drama';
+    $show['Author']='Margaret Atwood';
+    $show['Year']='1987';
+
+    foreach($show as $key => $value){
+        echo '<b>'.$key.'</b>: '.$value.'< br>';
+    }
+
+
+    $nav['index.php'] = 'Home';
+    $nav['about.php'] = 'About';
+    $nav['daily.php'] = 'Daily';
+    $nav['project.php'] = 'Project';
+    $nav['contact.php'] = 'Contact';
+    $nav['gallery.php'] = 'Gallery';
+
+
+    foreach($nav as $key => $value){
+    	echo '<b>'.$key.'</b>: '.$value.'< br>';
+    }
+
+//for loop
+    for ($x = 1; $x <= 21; $x+=3) {
+        echo "The number is: $x < br>";
+    }
+    
+// is a for loop for our famus cecius - far converter
+// do not call out the celcius variable OUTSIDE of the loop
+    for ($celcius = 0; $celcius <= 40; $celcius+=3) {
+        $far = ($celcius * 9/5) + 32;
+        $friendly_far = floor($far);
+        echo '<b>Farenheit:</b>'.$friendly_far.'<b>  Celcius:</b>'.$celcius.'';        
+    }
+
+//kilometers and we have miles
+    for ($k = 0; $k <= 40; $k+=3) {
+        $m = $k * 0.6214;
+        $friendly_m = number_format($m,1);
+        echo '<b>Kilometers:</b>'.$k.'<b>  Miles:</b>'.$friendly_m.'';        
+    }

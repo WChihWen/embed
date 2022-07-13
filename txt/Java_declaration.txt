@@ -1,0 +1,31 @@
+// integer: stores integers (whole numbers), without decimals, such as 123 or -123
+int userAge; 
+int userAge = 18;
+
+// float: stores floating point numbers, with decimals, such as 19.99 or -19.99
+double hoursFly;
+double hoursFly = 12.8;
+
+// Character: stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+char arrowBody;
+arrowBody = '-';
+
+//String: stores text, such as "Hello". String values are surrounded by double quotes
+String sentenceObject;
+String sentenceObject = "an apple";
+
+//boolean: stores values with two states: true or false
+boolean myDog;
+boolean myDog = true;
+
+//Array:An array is an ordered list of items of a given data type. Each item in an array is called an element.
+int[] myNum = new int[3];
+int[] myNum = {10, 20, 30};
+
+String[] cars = new String[4];
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+int x = myNumbers[1][2];
+// Outputs 7
+
