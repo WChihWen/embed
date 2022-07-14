@@ -45,7 +45,7 @@
         <article class="content">
             <h1><?php echo $headline?></h1>  
             <div class="center">
-                <table style="width:100%;">                
+                <table style="width:100%;"> 
                     <tr>
                         <th style="width:150px;">Category</th>
                         <td style="text-align:left"><?php echo $video_type;?></td>

@@ -16,9 +16,7 @@
           ?>
     	<a href="contact.php" > Chih Wen Wang</a>, All Rights Reserved  ~     
              
-      <a href="../index.php" target="_blank">Portal Page</a>~
-      <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a>~
-      <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>        
+      <a href="../index.php" target="_blank">Portal Page</a>
 	  </small></p>
   </footer>  
 </div>

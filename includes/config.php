@@ -8,6 +8,7 @@ session_start();
 $nav1['index.php'] = "Home";
 $nav1['notes.php'] = "Notes";
 $nav1['videos.php'] = "Videos";
+$nav1['rss.php'] = "RSS News";
 $nav1['contact.php'] = "Contact";
 
 if (isset($_SESSION["USERNAME"]) && $_SESSION["USERNAME"] != NULL){  
@@ -26,67 +27,103 @@ define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
 switch(THIS_PAGE){
     case 'index.php':
-        $title = "Home page of final project website";
+        $title = "Home page of web project website";
         $body='home';
-        $headline = 'Welcome to the home page of the final project website';
+        $headline = ''; //Welcome to the home page of the final project website
         $logo = 'logo_php.png';
         break;    
     case 'notes.php':
-        $title = "notes page of final project website";
+        $title = "notes page of web project website";
         $body='notes inner';
-        $headline = 'Welcome to notes page';
+        $headline = ''; //Welcome to notes page
+        $logo = 'logo_php.png';
+        break;
+    case 'rss.php':
+        $title = "RSS News page of web project website";
+        $body='RSS inner';
+        $headline = ''; //Welcome to notes page
+        $logo = 'logo_php.png';
+        break;   
+    case 'rss-view.php':
+        $title = "View News page of web project website";
+        $body='RSS inner';
+        $headline = ''; //Welcome to notes page
+        $logo = 'logo_php.png';
+        break;   
+    case 'category-new.php':
+        $title = "New Category page of web project website";
+        $body='RSS inner';
+        $headline = ''; //Welcome to notes page
+        $logo = 'logo_php.png';
+        break;
+    case 'category-edit.php':
+        $title = "Edit Category page of web project website";
+        $body='RSS inner';
+        $headline = ''; //Welcome to notes page
+        $logo = 'logo_php.png';
+        break;
+    case 'feeds-new.php':
+        $title = "New Feeds page of web project website";
+        $body='RSS inner';
+        $headline = ''; //Welcome to notes page
+        $logo = 'logo_php.png';
+        break;
+    case 'feeds-edit.php':
+        $title = "Edit Feeds page of web project website";
+        $body='RSS inner';
+        $headline = ''; //Welcome to notes page
         $logo = 'logo_php.png';
         break;
     case 'videos.php':
-        $title = "videos page of final project website";
+        $title = "videos page of web project website";
         $body='video inner';
-        $headline = 'Welcome to the videos page where to collect some videos of tutorials';
+        $headline = ''; //Welcome to the videos page where to collect some videos of tutorials
         $logo = 'logo_php.png';
         break;
     case 'video-view.php':
-        $title = "Video-view page of final project website";
+        $title = "Video-view page of web project website";
         $body='video-view inner';
-        $headline = 'Welcome to the video detail where to display video detail';
+        $headline = ''; //Welcome to the video detail where to display video detail
         $logo = 'logo_php.png';
         break;
     case 'video-new.php':
-        $title = "Video-new page of final project website";
+        $title = "Video-new page of web project website";
         $body='video-new inner';
-        $headline = 'Welcome to create a new video';
+        $headline = '';//Welcome to create a new video
         $logo = 'logo_php.png';
         break;
     case 'contact.php':
-        $title = "Contact page of final project website";
+        $title = "Contact page of web project website";
         $body='contact inner';
-        $headline = 'Welcome to the Contact page where to contact us';
+        $headline = ''; //Welcome to the Contact page where to contact us
         $logo = 'logo_php.png';
         break;
     case 'login.php':
-        $title = "Login page of final project website";
+        $title = "Login page of web project website";
         $body='login inner';
         $headline = 'Sign in to the website';
         $logo = 'logo_php.png';
         break;
     case 'logout.php':
-        $title = "Logout page of final project website";
+        $title = "Logout page of web project website";
         $body='logout inner';
         $headline = 'Sign out of the website.';
         $logo = 'logo_php.png';
         break;
     case 'members.php':
-        $title = "Members page of final project website";
+        $title = "Members page of web project website";
         $body='member inner';
-        $headline = 'Welcome to the member page where to register new member';
+        $headline = ''; //Welcome to the member page where to register new member
         $logo = 'logo_php.png';
         break;
     case 'member-view.php';
-        $title = "Members page of final project website";
+        $title = "Members page of web project website";
         $body='member-view inner';
-        $headline = 'Welcome to the member view page where to show member\'s detail information';
+        $headline = ''; //Welcome to the member view page where to show member\'s detail information
         $logo = 'logo_php.png';
         break;
     default:
-        $title = "Home page of final project website";
+        $title = "Home page of web project website";
         $body='home';
         $headline = 'Welcome to the Home page';
         $logo = 'logo_php.png';
