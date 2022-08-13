@@ -77,9 +77,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                <span class="error"><?php echo $pwd_Err;?></span>                 
                <span class="error"><?php echo $login_Err;?></span>     
                <div class="center">
-               <input type="submit" class="btn" value="Sign in">
-               <a href="" class="button">Reset</a>
-               </div>               
+                  <input type="submit" class="btn" value="Sign in">
+                  <a href="" class="button">Reset</a>
+               </div>   
+               <p>Guest Login Account: <b>test</b> | Password: <b>123</b> </p>            
             </fieldset>
          </form>
          <p>Not yet a member?   <a href="members.php">Sign up</a>.</p>
